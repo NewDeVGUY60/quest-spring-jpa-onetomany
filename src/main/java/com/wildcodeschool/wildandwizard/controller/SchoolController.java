@@ -46,6 +46,7 @@ public class SchoolController {
         out.addAttribute("school", school);
         out.addAttribute("allWizards", wizardRepository.findAll());
 
+        
         // call the method getWizards in School
         List<Wizard> wizards = new ArrayList<>();
         Method method = getMethod(school, "getWizards",
